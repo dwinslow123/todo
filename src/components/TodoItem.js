@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { toggleComplete } from '../actions';
 import { connect } from 'react-redux';
+import { ListGroup, ListGroupItem, Checkbox, ToggleButton, ToggleButtonGroup } from 'react-bootstrap';
 
 class TodoItem extends Component {
 
@@ -10,13 +11,17 @@ class TodoItem extends Component {
 
   render() {
     return (
-      <li>
-        <input 
-          type="checkbox"
-          onChange={this.toggleComplete.bind(this)}
-        />
-        {this.props.todo.value}
-      </li>
+      <div className="container mx-auto">
+        <div className="row">
+          <div className="col-lg-12">
+            <ToggleButtonGroup type="checkbox">
+              <ToggleButton value={2}>
+                  {this.props.todo.value}
+              </ToggleButton>
+            </ToggleButtonGroup>
+          </div>
+        </div>
+      </div>
     );
   }
 }
