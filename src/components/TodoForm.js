@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import TodoList from './TodoList';
 import { addTodo } from '../actions';
-import { FormControl, Checkbox, FormGroup, ControlLabel, HelpBlock, Jumbotron, ToggleButton, ToggleButtonGroup } from 'react-bootstrap';
+import { FormControl, FormGroup, ControlLabel, HelpBlock } from 'react-bootstrap';
 import '../App.css';
 
 const FieldGroup = ({ id, label, help, ...props }) => {
@@ -57,6 +57,7 @@ class TodoForm extends Component {
                 className="text-center"
               />
             </form>
+            <p>Enter what you'd like to acomplish today above, and when it's complete just tap it below!</p>
             <TodoList todos={this.props.todos} />
           </div>
         </div>

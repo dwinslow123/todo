@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { toggleComplete } from '../actions';
 import { connect } from 'react-redux';
-import { ListGroup, ListGroupItem, Checkbox, ToggleButton, ToggleButtonGroup } from 'react-bootstrap';
+import { ToggleButton, ToggleButtonGroup } from 'react-bootstrap';
 
 class TodoItem extends Component {
 
