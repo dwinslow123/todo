@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA,oBACE,YACA,wBAA0B,CAG5B,KACE,eAAiB","file":"static/css/main.b89b1cd7.css","sourcesContent":["body, html, Jumbotron {\n  height: 100%;\n  background-color: #8FDBD2;\n}\n\n.App {\n  margin-top: 3rem;\n}\n\n\n// WEBPACK FOOTER //\n// ./src/App.css"],"sourceRoot":""}
